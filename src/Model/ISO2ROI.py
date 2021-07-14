@@ -37,4 +37,5 @@ class ISO2ROI:
                     dose_level = sd * rt_dose_dose / (rt_plan_dose.DoseGridScaling * 10000)
                     contours[slider_id].append(measure.find_contours(grid, dose_level))
 
+        print(contours)
         return contours
